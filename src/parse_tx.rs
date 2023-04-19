@@ -41,13 +41,13 @@ macro_rules! parse_tx {
                 $( {
                     index: $input_index:expr,
                     capacity: $input_capacity:expr
-                } ),+
+                } ),*
             ],
             outputs: [
                 $( {
                     index: $output_index:expr,
                     capacity: $output_capacity:expr
-                } ),+
+                } ),*
             ],
             digest: $digest:expr
         }
